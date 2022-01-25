@@ -5,8 +5,10 @@ export default function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+
   const emailRef = useRef();
   const passwordRef = useRef();
+
 
   const handleStart = () => {
     setEmail(emailRef.current.value);
@@ -45,7 +47,7 @@ export default function Register() {
           <form className="input">
             <input type="password" placeholder="password" ref={passwordRef} />
             <button className="registerButton" onClick={handleFinish}>
-              Start
+               Start
             </button>
           </form>
         )}

@@ -7,7 +7,7 @@ import { useState } from "react";
 import "./navbar.scss";
 
 
-export const Navbar = () => {
+export default function Navbar(){
 
     const [isScrolled , setIsScrolled] = useState(false);
 
